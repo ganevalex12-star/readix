@@ -1,0 +1,17 @@
+/* Readix legal pages: plain, readable, no web fonts, no scripts, nothing loaded from elsewhere */
+:root { color-scheme: light dark; --bg: #F4ECE5; --fg: #2B211D; --muted: #6E5F57; --line: #E2D5CB; --accent: #A4561E; }
+@media (prefers-color-scheme: dark) { :root { --bg: #211917; --fg: #F1E7DF; --muted: #B8A79C; --line: #3A2E29; --accent: #F2B65A; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 28px 20px 64px; }
+h1 { font-size: 1.7em; line-height: 1.25; margin: .4em 0 .2em; }
+h2 { font-size: 1.2em; margin: 1.8em 0 .4em; }
+p, li { margin: .4em 0; }
+ul { padding-left: 1.3em; }
+a { color: var(--accent); }
+.meta { color: var(--muted); font-size: .92em; }
+.langs { display: flex; flex-wrap: wrap; gap: 6px 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); font-size: .95em; }
+.langs b { font-weight: 600; }
+.box { border: 1px solid var(--line); border-radius: 12px; padding: 4px 16px; margin: 1em 0; }
+address { font-style: normal; }
+footer { margin-top: 3em; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: .92em; }
